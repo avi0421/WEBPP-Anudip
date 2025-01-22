@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+    <script>
+        function calculate() {
+            let num1, num2, addition, subtraction, multiplication;
+            num1 = parseFloat(document.getElementById('num1').value);
+            num2 = parseFloat(document.getElementById('num2').value);
+
+            addition = num1 + num2;
+            subtraction = num1 - num2;
+            multiplication = num1 * num2;
+
+            document.getElementById('addition').value = addition;
+            document.getElementById('subtraction').value = subtraction;
+            document.getElementById('multiplication').value = multiplication;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter the first number: <input type="number" id="num1"></p>
+    <p>Enter the second number: <input type="number" id="num2"></p>
+    <button onclick="calculate()">Calculate</button>
+
+    <p>Addition: <input id="addition"></p>
+    <p>Subtraction: <input id="subtraction"></p>
+    <p>Multiplication: <input id="multiplication"></p>
+</body>
+
+</html>

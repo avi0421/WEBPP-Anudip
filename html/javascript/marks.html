@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Percentage</title>
+    <script>
+        function calPercent() {
+            let totalMarks, obtainedMarks, percentage;
+            totalMarks = parseFloat(document.getElementById('totalMarks').value);
+            percentage = (obtainedMarks / totalMarks) * 100;
+
+            document.getElementById('percentage').value = percentage.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter the total marks: <input id="totalMarks"></p>
+    <p>Enter the obtained marks: <input id="obtainedMarks"></p>
+    <button onclick="calPercent()">Percentage</button>
+
+    <p>Percentage: <input type="text" id="percentage"></p>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let age = parseInt(prompt("Enter your age"));
+
+        if (age < 18) {
+            document.write("<b>You are a minor, can't work</b>");
+        } else {
+            if (age >= 18 && age < 60) {
+                document.write("<b>You can work</b>");
+            } else {
+                document.write("<b>You are too old to work</b>");
+            }
+        }
+    </script>
+</body>
+
+</html>

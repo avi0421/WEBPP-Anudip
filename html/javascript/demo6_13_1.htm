@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Application</title>
+</head>
+
+<body>
+    <script>
+        let isPremium = prompt("Premium member? (yes/no)");
+        let amount = parseFloat(prompt("Total amount:"));
+
+        if (isPremium === "yes") amount *= 0.9;
+        else if (amount > 10000) amount *= 0.95;
+
+        document.write("Final amount: ₹" + amount.toFixed(2));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack's Portfolio</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #111;
+        color: #fff;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background-color: #222;
+        padding: 20px 0;
+      }
+
+      .logo h1 {
+        font-size: 2.5em;
+        color: #ffcc00;
+      }
+
+      .logo span {
+        font-size: 1.5em;
+        color: #fff;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+      }
+
+      nav ul li a:hover {
+        color: #ffcc00;
+      }
+
+      .hero {
+        text-align: center;
+        margin: 50px 0;
+      }
+
+      .hero h1 {
+        font-size: 3em;
+        margin: 10px 0;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+      }
+
+      button {
+        background-color: #ffcc00;
+        color: #111;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #e6b800;
+      }
+
+      footer {
+        background-color: #222;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .social-links a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+      }
+
+      .social-links a:hover {
+        color: #ffcc00;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          text-align: center;
+        }
+
+        nav ul li {
+          display: block;
+          margin: 10px 0;
+        }
+
+        .hero h1 {
+          font-size: 2.5em;
+        }
+
+        .hero p {
+          font-size: 1em;
+        }
+
+        .social-links {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+
+        .social-links a {
+          margin: 0 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <h1>J</h1>
+            <span>Jack</span>
+            <p>Web Developer</p>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">My Skills</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="hero">
+          <h2>Hi, I'm Jack,</h2>
+          <h1>Web Developer</h1>
+          <p>Front End Developer / WordPress Expert</p>
+          <a href="#contact"><button>Contact me!</button></a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p>Scroll down</p>
+      </div>
+    </footer>
+  </body>
+</html>

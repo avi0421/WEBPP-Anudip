@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area</title>
+    <script>
+        function calArea() {
+            let length, breadth, area;
+            length = parseFloat(document.getElementById('length').value);
+            breadth = parseFloat(document.getElementById('breadth').value);
+            area = length * breadth;
+
+            document.getElementById('area').value = area;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter the length of the rectangle: <input id="length"></p>
+    <p>Enter the breadth of the rectangle: <input id="breadth"></p>
+    <button onclick="calArea()">Calculate Area</button>
+
+    <p>Area of Rectangle: <input id="area"></p>
+</body>
+
+</html>
