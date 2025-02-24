@@ -1,0 +1,13 @@
+go to vs code terminal then convert powershell to cmd
+1. new folder then shift + right click then select vs code
+2. python -m venv env //environment set
+3. cd env //go in env
+4. Scripts\activate  //activate  scripts
+5. pip install Django
+6. django-admin startproject projectname
+7. cd projectname // get in project
+8. python manage.py startapp appname //making application
+9. after all this steps move appname in env (environment)
+10.python manage.py runserver
+
+
